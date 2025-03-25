@@ -205,6 +205,7 @@ class ClientWindow:
                     ax.set_title(opts.get("title", f"Plot {plot_id}"))
                     ax.set_xlabel(opts.get("xlabel", "X"))
                     ax.set_ylabel(opts.get("ylabel", "Y"))
+                    ax.grid(visible=True, alpha=0.25)
                     if "xlim" in opts:
                         ax.set_xlim(opts["xlim"])
                     if "ylim" in opts:
@@ -324,7 +325,6 @@ class PlotService:
                             cw.remove_line(plot_id, line_id)
                 for cw in list(client_windows.values()):
                     cw.refresh()
-                plt.pause(0.1)
         except KeyboardInterrupt:
             print("Plot service shutting down.")
         finally:

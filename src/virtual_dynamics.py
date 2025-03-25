@@ -10,8 +10,8 @@ class VirtualDynamics:
 
     def apply_force(self, F: float | NDArray, dt: float) -> None:
         self.a = F / self.M
+        self.x += self.v * dt + 0.5 * self.a * dt ** 2
         self.v += self.a * dt
-        self.x += self.v * dt
 
     def get_position(self) -> float | NDArray:
         return self.x
