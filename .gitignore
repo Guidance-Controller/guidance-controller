@@ -24,6 +24,9 @@ __pycache__/
 # Ignore VSCode settings directory
 .vscode/
 
+# Ignore VSCode workspace settings
+*.code-workspace
+
 # Ignore .npy files
 *.npy
 
