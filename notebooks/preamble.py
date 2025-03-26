@@ -5,7 +5,13 @@ import os
 
 # Add src/ to the Python path if not already added
 
-src_path = os.path.abspath(os.path.join(os.getcwd(), '../src'))
+src_paths = [
+    '../src',
+    '../external/shared-language-force-embedding/src',
+]
 
-if src_path not in sys.path:
-    sys.path.append(src_path)
+for path in src_paths:
+    src_path = os.path.abspath(os.path.join(os.getcwd(), path))
+
+    if src_path not in sys.path:
+        sys.path.append(src_path)
