@@ -17,6 +17,7 @@ notebooks/*
 # Don't ignore significant files in notebooks dir
 !notebooks/preamble.py
 !notebooks/physical_therapy.ipynb
+!notebooks/calibrate_camera.ipynb
 
 # Ignore Python caches
 __pycache__/

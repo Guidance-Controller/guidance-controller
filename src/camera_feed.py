@@ -48,3 +48,9 @@ class CameraFeed:
         cv2.waitKey(1)
 
         self._get_new_frame()
+
+    def save_frame(self, directory: str, name: str) -> None:
+        cv2.imwrite(f'{directory}/{name}_rgb.bmp',
+                    (cv2.cvtColor(self.frame.rgb, cv2.COLOR_RGB2BGR) * 255.0).astype(np.uint8))
+        cv2.imwrite(f'{directory}/{name}_d.bmp',
+                    (np.clip(self.frame.depth, 0.0, 16.0) * 1000.0).astype(np.uint16))
