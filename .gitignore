@@ -19,6 +19,7 @@ notebooks/*
 !notebooks/physical_therapy.ipynb
 !notebooks/calibrate_camera.ipynb
 !notebooks/guidance_controller_experiment.ipynb
+!notebooks/calibrate_language_only_experiment.ipynb
 
 # Ignore Python caches
 __pycache__/
