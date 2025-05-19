@@ -251,5 +251,5 @@ PHRASE_MAPPING = {
     "immediately up": "Raise your arm up at once"
 }
 
-WORDS_PER_PHRASE = np.mean(
+MEAN_WORDS_PER_PHRASE = np.mean(
     [len(PHRASE_MAPPING[phrase].split(' ')) for phrase in PHRASE_MAPPING])
