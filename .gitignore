@@ -22,6 +22,7 @@ notebooks/*
 !notebooks/dumb_guidance_controller_experiment.ipynb
 !notebooks/physical_only_experiment.ipynb
 !notebooks/calibrate_language_only_experiment.ipynb
+!notebooks/language_only_experiment.ipynb
 
 # Ignore Python caches
 __pycache__/

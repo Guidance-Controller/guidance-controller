@@ -35,9 +35,9 @@ PHRASE_MAPPING = {
     "slightly forward left": "Try reaching a little forward and left",
     "slightly forward right": "Reach just a bit forward and to the right",
     "slightly forward up": "Let's lift your arm slightly up and forward",
-    "slightly left": "Move your arm a little to the left",
+    "slightly left": "Ease your arm to the left",
     "slightly left up": "Raise your arm slightly up and left",
-    "slightly right": "Shift your arm a little to the right",
+    "slightly right": "Shift your arm to the right",
     "slightly right up": "Let's try lifting your arm slightly up and right",
     "slightly up": "Raise your arm just a bit",
 
