@@ -13,10 +13,11 @@ class TrajectoryPlanner:
 
         self.going_forward = True
 
-    def update_reference_trajectory(self, current_position) -> None:
+    def update_reference_trajectory(self, current_position) -> bool:
         if current_position[0] <= self.positions[-1, 0] if self.going_forward else current_position[0] >= self.positions[0, 0]:
             self.going_forward = not self.going_forward
             self.velocities *= -1
+        return self.going_forward
 
     def get_closest_target(self, current_position: NDArray) -> tuple[NDArray, NDArray]:
         distances = np.linalg.norm(self.positions - current_position, axis=1)
