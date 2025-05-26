@@ -251,5 +251,100 @@ PHRASE_MAPPING = {
     "immediately up": "Raise your arm up at once"
 }
 
+SIMPLE_PHRASE_MAPPING = {
+    '': ["",],
+
+    "backward": [
+        "Bring your arm back",
+        "Move your arm backward",
+        "Pull your arm behind you"
+    ],
+    "backward down": [
+        "Lower your arm behind you",
+        "Move your arm back and down",
+        "Drop your arm backward"
+    ],
+    "backward left": [
+        "Move your arm back and left",
+        "Bring your arm behind and left",
+        "Pull your arm to the back-left"
+    ],
+    "backward right": [
+        "Move your arm back and right",
+        "Bring your arm behind and right",
+        "Pull your arm to the back-right"
+    ],
+    "backward up": [
+        "Raise your arm behind you",
+        "Lift your arm back and up",
+        "Reach upward behind you"
+    ],
+    "down": [
+        "Lower your arm",
+        "Drop your arm",
+        "Move your arm downward"
+    ],
+    "down forward": [
+        "Bring your arm down and forward",
+        "Lower your arm in front",
+        "Move your arm downward and forward"
+    ],
+    "down left": [
+        "Lower your arm to the left",
+        "Drop your arm left",
+        "Move down toward the left"
+    ],
+    "down right": [
+        "Lower your arm to the right",
+        "Drop your arm right",
+        "Move down toward the right"
+    ],
+    "forward": [
+        "Extend your arm forward",
+        "Reach out front",
+        "Push your arm ahead"
+    ],
+    "forward left": [
+        "Reach forward and left",
+        "Move your arm ahead to the left",
+        "Stretch your arm front-left"
+    ],
+    "forward right": [
+        "Reach forward and right",
+        "Move your arm ahead to the right",
+        "Stretch your arm front-right"
+    ],
+    "forward up": [
+        "Lift your arm up and forward",
+        "Raise your arm diagonally forward",
+        "Move your arm upward and ahead"
+    ],
+    "left": [
+        "Move your arm to the left",
+        "Extend your arm left",
+        "Bring your arm leftward"
+    ],
+    "left up": [
+        "Raise your arm to the left",
+        "Lift your arm leftward",
+        "Reach up and left"
+    ],
+    "right": [
+        "Move your arm to the right",
+        "Extend your arm right",
+        "Bring your arm rightward"
+    ],
+    "right up": [
+        "Raise your arm to the right",
+        "Lift your arm rightward",
+        "Reach up and right"
+    ],
+    "up": [
+        "Lift your arm up",
+        "Raise your arm",
+        "Move your arm upward"
+    ],
+}
+
 MEAN_WORDS_PER_PHRASE = np.mean(
     [len(PHRASE_MAPPING[phrase].split(' ')) for phrase in PHRASE_MAPPING])
